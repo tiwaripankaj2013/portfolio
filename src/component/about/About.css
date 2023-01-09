@@ -1,0 +1,96 @@
+
+  .animate-ledgerleftright {
+    -webkit-animation: ledgerLeftRight 3s ease-in-out infinite;
+    animation: ledgerLeftRight 3s ease-in-out infinite;
+  }
+  .animate-ledgerrightleft {
+    -webkit-animation: ledgerRightLeft 3s ease-in-out infinite;
+    animation: ledgerRightLeft 3s ease-in-out infinite;
+  }
+  .animate-ledgerbottomtop {
+    -webkit-animation: ledgerBottomTop 3s ease-in-out infinite;
+    animation: ledgerBottomTop 3s ease-in-out infinite;
+  }
+  .animate-ledgertopbottom {
+    -webkit-animation: ledgerTopBottom 3s ease-in-out infinite;
+    animation: ledgerTopBottom 3s ease-in-out infinite;
+  }
+  @-webkit-keyframes ledgerLeftRight {
+    0% {
+      left: -40px;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  @keyframes ledgerLeftRight {
+    0% {
+      left: -40px;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  @-webkit-keyframes ledgerRightLeft {
+    0% {
+      right: -40px;
+    }
+    to {
+      right: 100%;
+    }
+  }
+  @keyframes ledgerRightLeft {
+    0% {
+      right: -40px;
+    }
+    to {
+      right: 100%;
+    }
+  }
+  @-webkit-keyframes ledgerTopBottom {
+    0% {
+      top: -40px;
+    }
+    to {
+      top: 100%;
+    }
+  }
+  @keyframes ledgerTopBottom {
+    0% {
+      top: -40px;
+    }
+    to {
+      top: 100%;
+    }
+  }
+  @-webkit-keyframes ledgerBottomTop {
+    0% {
+      bottom: -40px;
+    }
+    to {
+      bottom: 100%;
+    }
+  }
+  @keyframes ledgerBottomTop {
+    0% {
+      bottom: -40px;
+    }
+    to {
+      bottom: 100%;
+    }
+  }
+
+
+  .styledlist {
+    @apply list-none pl-0;
+  }
+  .styledlist li {
+    @apply relative mb-1 pl-6;
+  }
+  .styledlist li:last-child {
+    @apply mb-0;
+  }
+  .styledlist li:before {
+    content: "";
+    @apply absolute top-2 left-0 h-2 w-2 rounded-full bg-primary;
+  }

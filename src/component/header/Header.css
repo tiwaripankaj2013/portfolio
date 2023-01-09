@@ -1,0 +1,12 @@
+.header-mobilenav ul,
+  .header-nav ul,
+  .sidenav-mobilmenu ul {
+    counter-reset: section;
+  }
+  .header-mobilenav ul li a:before,
+  .header-nav ul li a:before,
+  .sidenav-mobilmenu ul li a:before {
+    counter-increment: section;
+    content: counter(section, decimal-leading-zero) ".";
+    padding-right: 0.25rem;
+  }
