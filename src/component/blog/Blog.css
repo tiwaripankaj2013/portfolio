@@ -1,0 +1,68 @@
+.swiper-holder {
+    position: relative;
+    margin-bottom: 68px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    z-index: 10;
+    display: inline-block;
+    height: 2.5rem !important;
+    min-height: 0;
+    width: 2.5rem !important;
+    border-radius: 9999px;
+    border-width: 2px;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+    --tw-border-opacity: 0.2;
+    padding: 0;
+    text-align: center;
+    top: calc(100% + 50px) !important;
+    font-size: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .swiper-button-next,
+  .swiper-button-next:after,
+  .swiper-button-prev,
+  .swiper-button-prev:after {
+    @apply text-white;
+    transition-property: color, background-color, border-color, fill, stroke,
+      opacity, box-shadow, transform, filter, -webkit-text-decoration-color,
+      -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+      backdrop-filter;
+    transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.3s;
+  }
+  .swiper-button-prev:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(114 226 174 / var(--tw-border-opacity));
+  }
+  .swiper-button-next:hover,
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 14px !important;
+    line-height: 1.8;
+    line-height: 2.25rem;
+  }
+  .swiper-button-next:hover,
+  .swiper-button-next:hover:after,
+  .swiper-button-prev:hover,
+  .swiper-button-prev:hover:after {
+    --tw-text-opacity: 1;
+    color: rgb(114 226 174 / var(--tw-text-opacity));
+  }
+  .swiper-button-prev {
+    left: auto !important;
+    right: calc(50% + 10px) !important;
+  }
+  .swiper-button-next {
+    right: auto !important;
+    left: calc(50% + 10px) !important;
+  }
+  *, :after, :before {
+    border: 0 solid #e5e7eb;
+}

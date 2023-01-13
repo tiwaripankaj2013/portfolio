@@ -8,10 +8,7 @@ const App = () => {
       <Header/>
       <Layout/>
       <button
-        className="btn fixed bottom-12 left-auto top-auto right-7 z-30 rounded-full p-2.5 text-xl"
-        data-projection-id={77}
-        style={{ opacity: 1, transform: "none" }}
-      >
+        className="btn fixed bottom-12 left-auto top-auto right-7 z-30 rounded-full p-2.5 text-xl">
         <svg
           stroke="currentColor"
           fill="currentColor"
