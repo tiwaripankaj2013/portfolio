@@ -1,6 +1,6 @@
-import React,{useRef,useState} from 'react';
-import { Navigation} from 'swiper';
-import { Swiper, SwiperSlide} from 'swiper/react';
+import React, { useRef} from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from 'swiper';
 import './Blog.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -51,6 +51,7 @@ const BlogItem = ({ title, link, image, date, details }) => {
   )
 }
 export const Blog = ({ title, blogs }) => {
+  const swiperRef = useRef();
   return (
     <div name="section-blog" className="news-section pt-24 lg:pt-28 xl:pt-32">
       <div className="container mx-auto">
@@ -69,13 +70,15 @@ export const Blog = ({ title, blogs }) => {
           <Swiper
             spaceBetween={20}
             slidesPerView={3}
-            navigation={true}
             modules={[Navigation]}
+            onBeforeInit={(swiper) => {
+              swiperRef.current = swiper;
+            }}
           >
             {blogs.map((blog) => <SwiperSlide key={blog.id}><BlogItem  {...blog} /></SwiperSlide>)}
           </Swiper>
-          <button className='swiper-button-prev' >Prev</button>
-          <button className='swiper-button-next'>Next</button>
+          <button className='swiper-button-prev'onClick={() => swiperRef.current?.slidePrev()}></button>
+          <button className='swiper-button-next'onClick={() => swiperRef.current?.slideNext()}></button>
         </div>
       </div>
     </div>

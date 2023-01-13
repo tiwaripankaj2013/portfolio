@@ -1,22 +1,11 @@
 .swiper-holder {
-    position: relative;
-    margin-bottom: 68px;
+  @apply relative mb-16;
   }
   .swiper-button-next,
   .swiper-button-prev {
-    z-index: 10;
-    display: inline-block;
-    height: 2.5rem !important;
-    min-height: 0;
-    width: 2.5rem !important;
-    border-radius: 9999px;
-    border-width: 2px;
-    border-color: rgb(255 255 255 / var(--tw-border-opacity));
-    --tw-border-opacity: 0.2;
-    padding: 0;
-    text-align: center;
+    @apply z-10 inline-block rounded-full border-2 border-opacity-20 border-white p-0 text-center min-h-0;
+    @apply h-10 w-10 !important;
     top: calc(100% + 50px) !important;
-    font-size: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -38,31 +27,23 @@
     transition-duration: 0.3s;
   }
   .swiper-button-prev:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(114 226 174 / var(--tw-border-opacity));
-  }
+    @apply border-primary;}
   .swiper-button-next:hover,
   .swiper-button-next:after,
   .swiper-button-prev:after {
-    font-size: 14px !important;
-    line-height: 1.8;
-    line-height: 2.25rem;
+    @apply text-sm leading-10 !important;
   }
   .swiper-button-next:hover,
   .swiper-button-next:hover:after,
   .swiper-button-prev:hover,
   .swiper-button-prev:hover:after {
-    --tw-text-opacity: 1;
-    color: rgb(114 226 174 / var(--tw-text-opacity));
+    @apply text-primary;
   }
   .swiper-button-prev {
-    left: auto !important;
+    @apply left-auto !important;
     right: calc(50% + 10px) !important;
   }
   .swiper-button-next {
-    right: auto !important;
+    @apply right-auto !important;
     left: calc(50% + 10px) !important;
   }
-  *, :after, :before {
-    border: 0 solid #e5e7eb;
-}

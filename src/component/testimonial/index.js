@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -39,6 +39,7 @@ const TestimonialItem = ({ id, profile, name, project, rating, details }) => {
   )
 }
 export const Testimonial = ({ title, reviews }) => {
+  const swiperRef = useRef();
   return (
     <div
       name="section-reviews"
@@ -46,7 +47,7 @@ export const Testimonial = ({ title, reviews }) => {
     >
       <div className="container mx-auto">
         <div className="section-heading relative overflow-hidden pb-14 text-center">
-          <h2 className="relative z-10 mb-2 uppercase">{title}</h2>
+          <h2 className="relative z-10 mb-2 uppercase text-4xl font-bold">{title}</h2>
           <span className="relative z-10 inline-block h-1.5 w-32 overflow-hidden rounded-full bg-primary bg-opacity-20">
             <span className="absolute left-0 top-0 inline-block h-full w-1.5 animate-lefttoright rounded-full bg-primary" />
           </span>
@@ -60,11 +61,15 @@ export const Testimonial = ({ title, reviews }) => {
           <Swiper
             spaceBetween={20}
             slidesPerView={3}
-            navigation={true}
             modules={[Navigation]}
+            onBeforeInit={(swiper) => {
+              swiperRef.current = swiper;
+            }}
           >
             {reviews.map((review) => <SwiperSlide key={review.id}><TestimonialItem {...review} /></SwiperSlide>)}
           </Swiper>
+          <button className='swiper-button-prev'onClick={() => swiperRef.current?.slidePrev()}></button>
+          <button className='swiper-button-next'onClick={() => swiperRef.current?.slideNext()}></button>
         </div>
       </div>
     </div>

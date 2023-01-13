@@ -1,59 +1,31 @@
 
 .blurredBg:before {
+  @apply fixed h-full w-full left-0 top-0 bg-cover;
   content: "";
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
   background-image: url(https://tf-react-bieber.vercel.app/images/body-bg.png);
-  background-size: cover;
 }
 
 
 
 .styledlist {
-  list-style-type: none;
-  padding-left: 0;
+  @apply list-none pl-0;
 }
 
 .styledlist li:before {
   content: "";
-  position: absolute;
-  top: 0.5rem;
-  left: 0;
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(114 226 174 / var(--tw-bg-opacity));
+  @apply absolute top-2 left-0 h-2 w-2 rounded-full bg-primary;
 }
 
 .services-wrapper .service:before {
   counter-increment: section;
   content: counter(section, decimal-leading-zero);
   pointer-events: none;
-  position: absolute;
-  left: auto;
-  right: 0.75rem;
-  top: 0.75rem;
-  font-size: 46px;
-  line-height: 1.2;
-  font-weight: 700;
-  opacity: 0.1;
+  @apply absolute left-auto right-3 top-3 text-5xl font-bold opacity-10;
 }
 
 .btn {
-  display: inline-block;
-  height: auto;
-  min-height: 0;
-  width: auto;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 0.25rem;
+  @apply inline-block h-auto w-auto min-h-0 cursor-pointer overflow-hidden rounded bg-primary;
   border-width: 0;
-  --tw-bg-opacity: 1;
-  background-color: rgb(114 226 174 / var(--tw-bg-opacity));
   padding: 0.625rem 1.25rem;
   text-align: center;
   vertical-align: middle;
