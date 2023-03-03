@@ -1,12 +1,17 @@
 import React from 'react';
 import { Header } from './component/header';
-import Layout from './component/layout';
 import './App.css';
+import './Layout.css';
+import { Outlet } from 'react-router-dom';
 const App = () => {
   return (
     <div className="wrapper relative min-h-screen w-full bg-grey blurredBg">
-      <Header/>
-      <Layout/>
+      <Header />
+      <main className="page-content relative bg-grey bg-opacity-95 backdrop-blur-lg backdrop-filter">
+        <div className="sitedata relative z-30 min-h-screen">
+          <Outlet />
+        </div>
+      </main>
       <button
         className="btn fixed bottom-12 left-auto top-auto right-7 z-30 rounded-full p-2.5 text-xl">
         <svg

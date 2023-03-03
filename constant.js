@@ -139,56 +139,52 @@ export const ResumeData = {
 }
 export const PortfolioData = {
     title : 'my works',
-    skills:[
+    filterMenuList:[
         {
-            skill :'all',
-            title:'All',
+            category : 'nextjs',
+            menuTitle:'Next Js',
         },
         {
-            skill : 'htmlCss',
-            title:'Html5 Css3',
+            category : 'react',
+            menuTitle:'React JS',
         },
         {
-            skill :'react',
-            title:'React Js',
-        },
-        {
-            skill :'nextjs',
-            title:'Next Js',
-        },
-        {
-            skill :'node',
-            title:'Node Js',
-        },
+            category : 'htmlCss',
+            menuTitle:'Html CSS',
+        }
     ],
     projects:[
         {
             id:'1',
-            skill : 'nextjs',
+            category : 'nextjs',
             title:'Wynk Music',
+            menuTitle:'Next Js',
             link:'https://wynk.in/music',
             profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',
             detail:'Wynk Limited launched in late 2015 as an innovation unit of Bharti Airtel Limited, one of Indias leading telecommunications companies. Wynk Music belongs to Airtel Digital Limited, along with Xstream Digital, a video streaming service.'
         },
         {
             id:'2',
-            skill : 'nextjs',
+            category : 'nextjs',
             title:'Wynk Podcast',
+            menuTitle:'Next JS',
             link:'https://wynk.in/podcast',
             profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',
             detail:'Wynk Limited launched in late 2015 as an innovation unit of Bharti Airtel Limited, one of Indias leading telecommunications companies. Wynk Music belongs to Airtel Digital Limited, along with Xstream Digital, a video streaming service.'
         },
         {
             id:'3',
-            skill : 'react',
+            category : 'react',
             title:'Wynk Studio',
+            menuTitle:'React JS',
             link:'https://studio.wynk.in/',
             profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',
             detail:'Wynk Limited launched in late 2015 as an innovation unit of Bharti Airtel Limited, one of Indias leading telecommunications companies. Wynk Music belongs to Airtel Digital Limited, along with Xstream Digital, a video streaming service.'
         },
         {
             id:'4',
-            skill : 'htmlCss',
+            category : 'htmlCss',
+            menuTitle:'Html CSS',
             title:'Emaar',
             link:'https://www.emaar.com/',
             profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',
@@ -196,7 +192,8 @@ export const PortfolioData = {
         },
         {
             id:'5',
-            skill : 'htmlCss',
+            category : 'htmlCss',
+            menuTitle:'Html CSS',
             title:'Weil',
             link:'https://www.weil.com/',
             profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',

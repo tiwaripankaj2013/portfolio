@@ -1,14 +1,15 @@
-import React from 'react';
-const TabMenu = ({ skills }) => {
+import React,{useState} from 'react';
+const TabMenu = ({ menuItems,filterItem }) => {
   return (
     <div className="portfolio-filters flex flex-wrap justify-center gap-4">
-      {skills.map((skill,index) => {
-        return (<button key={index} className="btn btn-small ">
-          <span>{skill.title}</span>
+      <button className="btn btn-small" onClick={()=>filterItem('all')}>All</button>
+      {menuItems.map((item) => {  
+        return (<button key={item.id} className="btn btn-small" onClick={()=> filterItem(item.category)}>
+          <span>{item.menuTitle}</span>
         </button>)
       })}
     </div>
-  )
+  )   
 }
 
 const ProjectItem = ({ title, link, profile, detail}) => {
@@ -17,7 +18,6 @@ const ProjectItem = ({ title, link, profile, detail}) => {
       <div className="portfolio card hovercard group p-4 md:p-5">
         <div className="portfolio-top relative overflow-hidden">
           <div className="portfolio-image fiximage blur-0 filter transition-all duration-500 group-hover:blur">
-
             <img
               alt={title}
               src={profile}
@@ -70,7 +70,12 @@ const ProjectItem = ({ title, link, profile, detail}) => {
     </div>
   )
 }
-export const Portfolios = ({ title, skills, projects, }) => {
+export const Portfolios = ({ title,projects,filterMenuList }) => {
+  const [category, setCategory] = useState("all");
+  const handleFilterClick = (category) => {
+    setCategory(category);
+  };
+  const projectsFilter = category === "all" ? projects : projects.filter((project) => project.category === category);
 
   return (
     <div
@@ -90,9 +95,9 @@ export const Portfolios = ({ title, skills, projects, }) => {
           </span>
         </div>
         {/* tab menu */}
-        <TabMenu skills={skills} />
+        <TabMenu menuItems={filterMenuList} filterItem={handleFilterClick} />
         <div className="mt-12 grid grid-cols-6 gap-7">
-          {projects.map((project,index) => <ProjectItem key={project.id} {...project} />)}
+          {projectsFilter.map((project,index) => <ProjectItem key={project.id} {...project} />)}
         </div>
         <div className="mt-12 text-center">
           <button className="btn btn-small">
