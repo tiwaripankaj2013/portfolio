@@ -1,6 +1,9 @@
-import React from 'react';
+import React,{StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
-import App from './App';
+import { RouterProvider } from 'react-router-dom';
+import { appRouter } from './appRouter';
 import "./index.css";
+import { ScrollApp } from './ScrollApp';
 const root  = createRoot(document.getElementById('root'));
-root.render(<App/>);
+// root.render(<RouterProvider router={appRouter} />);
+root.render(<StrictMode><ScrollApp/></StrictMode>);  
