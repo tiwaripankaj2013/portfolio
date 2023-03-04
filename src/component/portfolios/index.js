@@ -2,9 +2,9 @@ import React,{useState} from 'react';
 const TabMenu = ({ menuItems,filterItem }) => {
   return (
     <div className="portfolio-filters flex flex-wrap justify-center gap-4">
-      <button className="btn btn-small" onClick={()=>filterItem('all')}>All</button>
-      {menuItems.map((item) => {  
-        return (<button key={item.id} className="btn btn-small" onClick={()=> filterItem(item.category)}>
+      <button className="btn btn-small" onClick={()=>filterItem('all')}><span>All</span></button>
+      {menuItems.map((item) => {
+        return (<button key={item.category} className="btn btn-small" onClick={()=> filterItem(item.category)}>
           <span>{item.menuTitle}</span>
         </button>)
       })}
