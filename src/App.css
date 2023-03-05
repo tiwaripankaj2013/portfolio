@@ -1,3 +1,4 @@
+html{ scroll-behavior: smooth;}
 body,
 p {
   font-size: 16px;
@@ -190,4 +191,10 @@ template {
 }
 *, :after, :before {
   border: 0 solid #e5e7eb;
+}
+.btn-goTo-top{border-radius: 50% !important;
+font-size: 1.25rem !important;
+line-height: 1.75rem !important;
+padding:0.625rem !important;
+position: fixed !important;
 }

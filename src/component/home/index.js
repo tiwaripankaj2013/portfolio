@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = ({ title, introduction, profile, name, role, facebook, linkedin, github, twitter, web }) => {
+const Home = ({ title, introduction, profile, name, role, facebook, linkedin, github, twitter, web,scrollAbout }) => {
   return (
     <div name="section-home">
       <div className="herosection relative overflow-hidden">
@@ -279,7 +279,7 @@ const Home = ({ title, introduction, profile, name, role, facebook, linkedin, gi
                     <path d="M13 16.172l5.364-5.364 1.414 1.414L12 20l-7.778-7.778 1.414-1.414L11 16.172V4h2v12.172z" />
                   </g>
                 </svg>
-                <span className="pl-2">Scroll Down</span>
+                <span className="pl-2" onClick={scrollAbout}>Scroll Down</span>
               </a>
             </div>
           </div>

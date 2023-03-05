@@ -154,7 +154,7 @@ export const Contact = ({title,subtitle,details,phone,email,address}) => {
                   defaultValue={""}
                 />
               </div>
-              <button type="submit" className="btn">
+              <button className="btn">
                 <span>Send Mail</span>
               </button>
             </form>

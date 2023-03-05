@@ -1,5 +1,6 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import './Layout.css';
+import './App.css';
 import { About } from './component/about';
 import { Skills } from './component/skills';
 import { Services } from './component/services';
@@ -9,7 +10,7 @@ import { Blog } from './component/blog';
 import Home from './component/home';
 import { Contact } from './component/contact';
 import { Testimonial } from './component/testimonial';
-import WithNavMenu from './WithNavMenu';
+import WithNavMenu from './component/layout/WithNavMenu';
 import {
   AboutData, SkillsData, ServicesData,
   ResumeData, PortfolioData, BlogData, TestimonialData,
@@ -17,12 +18,15 @@ import {
   HomeData
 } from '../constant';
 export const ScrollApp = () => {
+
+  const aboutRef = useRef(null)
+  const scrollToAbout = () => aboutRef.current.scrollIntoView();
   return(
   <WithNavMenu selector=".scrollItem">
     <section id="home" data-nav-title="Home" className='scrollItem' data-scrollspy>
-    <Home {...HomeData} />
+    <Home {...HomeData} scrollAbout={scrollToAbout} />
     </section>
-    <section id="about" data-nav-title="About" className='scrollItem' data-scrollspy>
+    <section ref={aboutRef} id="about" data-nav-title="About" className='scrollItem' data-scrollspy>
     <About {...AboutData} />
     <Skills {...SkillsData} />
     </section>
@@ -41,7 +45,7 @@ export const ScrollApp = () => {
     <section id="testimonial" data-nav-title="Review" className='scrollItem' data-scrollspy>
     <Testimonial {...TestimonialData} />
     </section>
-    <section id="contact" data-nav-title="Contact" className='scrollItem' data-scrollspy>
+    <section  id="contact" data-nav-title="Contact" className='scrollItem' data-scrollspy>
     <Contact {...ContactData} />
     </section>
   </WithNavMenu>
