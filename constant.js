@@ -7,7 +7,7 @@ export const HomeData = {
         linkedin:'https://www.linkedin.com/in/pankaj-kumar-tiwari-75546789/',
         github:'https://github.com/tiwaripankaj2013',
         facebook:'facebook',
-        twitter:'',
+        twitter:'https://twitter.com/tiwarpankaj2013',
         web:'',
 }
 export const AboutData = {
