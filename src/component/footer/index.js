@@ -236,7 +236,7 @@ export const Footer = () => {
             className="pl-1.5 font-medium text-heading no-underline hover:text-primary"
             href="/"
           >
-            NuclearThemes
+            Pankaj Kumar Tiwari
           </a>
         </p>
       </div>

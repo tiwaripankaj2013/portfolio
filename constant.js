@@ -1,7 +1,15 @@
+export const profile = require(`../portfolio/images/profile.jpg`).default;
+export const wynkMusic = require(`../portfolio/images/wynkMusic.png`).default;
+export const wynkPodcast = require(`../portfolio/images/wynkPodcast.png`).default;
+export const wynkStudio = require(`../portfolio/images/wynkStudio.png`).default;
+export const emaar = require(`../portfolio/images/emaar.png`).default;
+export const weil = require(`../portfolio/images/weil.png`).default;
+export const linkValidator = require(`../portfolio/images/linkValidator.png`).default;
+export const blog1 = require(`../portfolio/images/blog1.png`).default;
 export const HomeData = {
         title:'',
         name:'Pankaj Kumar Tiwari',
-        profile:'https://tf-react-bieber.vercel.app/images/formal-image.png',
+        profile:profile,
         introduction:'I am Pankaj Kumar Tiwari, I am Frontend developer',
         role:'Frontend developer',
         linkedin:'https://www.linkedin.com/in/pankaj-kumar-tiwari-75546789/',
@@ -160,7 +168,7 @@ export const PortfolioData = {
             title:'Wynk Music',
             menuTitle:'Next Js',
             link:'https://wynk.in/music',
-            profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',
+            profile:wynkMusic,
             detail:'Wynk Limited launched in late 2015 as an innovation unit of Bharti Airtel Limited, one of Indias leading telecommunications companies. Wynk Music belongs to Airtel Digital Limited, along with Xstream Digital, a video streaming service.'
         },
         {
@@ -169,7 +177,7 @@ export const PortfolioData = {
             title:'Wynk Podcast',
             menuTitle:'Next JS',
             link:'https://wynk.in/podcast',
-            profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',
+            profile:wynkPodcast,
             detail:'Wynk Limited launched in late 2015 as an innovation unit of Bharti Airtel Limited, one of Indias leading telecommunications companies. Wynk Music belongs to Airtel Digital Limited, along with Xstream Digital, a video streaming service.'
         },
         {
@@ -178,7 +186,7 @@ export const PortfolioData = {
             title:'Wynk Studio',
             menuTitle:'React JS',
             link:'https://studio.wynk.in/',
-            profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',
+            profile:wynkStudio,
             detail:'Wynk Limited launched in late 2015 as an innovation unit of Bharti Airtel Limited, one of Indias leading telecommunications companies. Wynk Music belongs to Airtel Digital Limited, along with Xstream Digital, a video streaming service.'
         },
         {
@@ -187,7 +195,7 @@ export const PortfolioData = {
             menuTitle:'Html CSS',
             title:'Emaar',
             link:'https://www.emaar.com/',
-            profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',
+            profile:emaar,
             detail:'Emaar Properties is an Emirati multinational real estate development company located in the United Arab Emirates. '
         },
         {
@@ -196,8 +204,17 @@ export const PortfolioData = {
             menuTitle:'Html CSS',
             title:'Weil',
             link:'https://www.weil.com/',
-            profile:'https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-2.jpg',
+            profile:weil,
             detail:'Weil, Gotshal & Manges LLP is an American international law firm with approximately 1,100 attorneys, headquartered in New York City.'
+        },
+        {
+            id:'6',
+            category : 'react',
+            menuTitle:'React Js',
+            title:'link Validator',
+            link:'http://stagingvalidator-env-1.eba-tbavurh6.us-east-1.elasticbeanstalk.com',
+            profile:linkValidator,
+            detail:'LinkValidator,  Link Validator keeps track of all backlinks with a click of a button. Check all your web pages link url and user experience.'
         }
     ]
 }
@@ -206,14 +223,14 @@ export const BlogData = {
     blogs :[
         {
            id:'1',
-           title:'What designer can do',
-           image:'https://tf-react-bieber.vercel.app/images/blog/sm/blog-image-1.jpg', 
-           link:'',
-           details:'loreum lipsum',
+           title:'React 18 Project setup from scratch using webpack5',
+           image:blog1, 
+           link:'https://medium.com/@tiwaripankaj2013/react18-project-setup-to-webpack5-from-scratch-d2cac4c85793',
+           details:'React 18 Project setup from scratch using webpack5, Project run and build custom configuration deep dive',
            date:{
-            day :'1',
-            month:'April',
-            year:'2022',
+            day :'6',
+            month:'January',
+            year:'2023',
            }
         },
         {
