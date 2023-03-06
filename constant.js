@@ -1,4 +1,4 @@
-export const profile = require(`../portfolio/images/profile.jpg`).default;
+export const profile = require(`../portfolio/src/assets/img/profile.jpg`).default;
 export const wynkMusic = require(`../portfolio/images/wynkMusic.png`).default;
 export const wynkPodcast = require(`../portfolio/images/wynkPodcast.png`).default;
 export const wynkStudio = require(`../portfolio/images/wynkStudio.png`).default;
