@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Typewriter from '../TypeWriter';
 const Home = ({ title, introduction, profile, name, role, facebook, linkedin, github, twitter, web,scrollAbout }) => {
   return (
     <div name="section-home">
@@ -22,7 +22,9 @@ const Home = ({ title, introduction, profile, name, role, facebook, linkedin, gi
                 >
                   <span className="block sm:inline">Hi, I am</span>{" "}
                   <span className="text-primary">
-                    <span>{role}</span>
+                  <Typewriter
+                    text={role}
+                  />
                     <span className="typed-cursor">|</span>
                   </span>
                 </h1>

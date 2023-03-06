@@ -6,6 +6,7 @@ export const emaar = require(`../portfolio/images/emaar.png`).default;
 export const weil = require(`../portfolio/images/weil.png`).default;
 export const linkValidator = require(`../portfolio/images/linkValidator.png`).default;
 export const blog1 = require(`../portfolio/images/blog1.png`).default;
+export const logo = require(`../portfolio/images/logo.svg`).default;
 export const HomeData = {
         title:'',
         name:'Pankaj Kumar Tiwari',

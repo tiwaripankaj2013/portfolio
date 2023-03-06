@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react';
 import './Header.css';
-
+import {logo} from '../../../constant';
 import { ScrollSpy, onScrollUpdate } from '../../ScrollSpy';
 import { Footer } from '../footer';
 
@@ -20,12 +20,14 @@ const Header = ({ options }) => {
     <header className="header top-0 left-0 z-50 h-auto w-full fixed animate-slidedown border-b border-white border-opacity-20 bg-grey bg-opacity-80 backdrop-blur backdrop-filter">
       <div className="container mx-auto px-4">
         <div className="header-inner flex items-center justify-between">
-          <a className="sitelogo py-2" to="/">
+          <a className="sitelogo" to="/">
             <img
-              className="h-8 max-h-full w-auto"
-              src="https://tf-react-bieber.vercel.app/images/logo.png"
-              alt="Bieber"
+              className="h-8 max-h-full w-36"
+              src={logo}
+              alt="Pankaj Kumar Tiwari"
             />
+            
+            
           </a>
           <div className="header-mobilenav block lg:hidden">
             <button className="btn btn-small btn-transparent px-3 text-3xl">
