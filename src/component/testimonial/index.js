@@ -65,6 +65,18 @@ export const Testimonial = ({ title, reviews }) => {
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
+            breakpoints={{
+              // when window width is >= 640px
+              640: {
+                width: 640,
+                slidesPerView: 1,
+              },
+              // when window width is >= 768px
+              768: {
+                width: 768,
+                slidesPerView: 2,
+              },
+            }}
           >
             {reviews.map((review) => <SwiperSlide key={review.id}><TestimonialItem {...review} /></SwiperSlide>)}
           </Swiper>

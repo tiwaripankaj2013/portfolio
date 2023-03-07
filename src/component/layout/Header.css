@@ -10,3 +10,6 @@
     content: counter(section, decimal-leading-zero) ".";
     padding-right: 0.25rem;
   }
+  .menu-list{
+    @apply mb-0 top-0 py-5 md:inline-flex bg-grey md:flex-row flex-col list-none md:gap-7 gap-2 px-2 md:relative absolute left-0;
+  }

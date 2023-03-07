@@ -15,7 +15,10 @@ const Header = ({ options }) => {
     const targetSection = document.querySelector(`${e.target.hash}`);
     window.scrollTo(0, targetSection.offsetTop);
   };
-
+  const [showMobMenu,setShowMobMenu] = useState(false)
+  const showMenu = ()=> {
+    setShowMobMenu(!showMobMenu);
+  }
   return (
     <header className="header top-0 left-0 z-50 h-auto w-full fixed animate-slidedown border-b border-white border-opacity-20 bg-grey bg-opacity-80 backdrop-blur backdrop-filter">
       <div className="container mx-auto px-4">
@@ -30,7 +33,7 @@ const Header = ({ options }) => {
             
           </a>
           <div className="header-mobilenav block lg:hidden">
-            <button className="btn btn-small btn-transparent px-3 text-3xl">
+            <button className="btn btn-small btn-transparent px-3 text-3xl" onClick={showMenu}>
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -46,15 +49,15 @@ const Header = ({ options }) => {
               </svg>
             </button>
           </div>
-          <div className="header-nav hidden lg:block">
+          <div className="header-nav lg:block">
             <nav className="flex-grow px-5 text-center">
-              <ul className="mb-0 inline-flex list-none gap-7 pl-0">
+              <ul className={ showMobMenu ?' flex menu-list':'hidden menu-list'}>
                 {options.map((option) => (
-                  <li key={option.hash} className="inline-block align-middle">
+                  <li key={option.hash} className="md:inline-block align-middle text-left">
                     <a href={`#${option.hash}`} onClick={onClick} data-scrollspy-id={option.hash}
-                      className="group relative inline-block cursor-pointer py-6 text-sm font-medium uppercase tracking-wider text-heading before:text-primary active:text-primary">
+                      className="group relative md:inline-block block text-left cursor-pointer md:py-6 py-2 text-sm font-medium uppercase tracking-wider text-heading before:text-primary active:text-primary">
                       {option.title}
-                      <span className="absolute left-0 top-auto bottom-5 inline-block h-px w-full origin-top-right scale-0 bg-primary align-middle transition-transform duration-500 group-hover:origin-top-left group-hover:scale-100" />
+                      <span className="absolute left-0 top-auto md:bottom-5 bottom-2 inline-block h-px w-full origin-top-right scale-0 bg-primary align-middle transition-transform duration-500 group-hover:origin-top-left group-hover:scale-100" />
                     </a>
                   </li>
                 ))}
