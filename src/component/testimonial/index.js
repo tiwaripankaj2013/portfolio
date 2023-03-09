@@ -60,21 +60,23 @@ export const Testimonial = ({ title, reviews }) => {
         <div className="swiper-holder">
           <Swiper
             spaceBetween={20}
-            slidesPerView={3}
+            slidesPerView={1}
             modules={[Navigation]}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
             breakpoints={{
-              // when window width is >= 640px
-              640: {
-                width: 640,
+              "467": {
                 slidesPerView: 1,
+                spaceBetween: 10,
               },
-              // when window width is >= 768px
-              768: {
-                width: 768,
+              "768": {
                 slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              "1140": {
+                slidesPerView: 3,
+                spaceBetween: 40,
               },
             }}
           >

@@ -1,7 +1,21 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import './Skills.css';
 
 const ProfileSkillCard = ({ title, value }) => {
+  const [percentage, setPercentage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (percentage < value*10) {
+        setPercentage(percentage + 1);
+      } else {
+        clearInterval(timer);
+      }
+    }, 20);
+
+    return () => clearInterval(timer);
+  }, [percentage]);
+  let stroke = percentage/100;
   return(
   <div
     className="col-span-4 sm:col-span-2 lg:col-span-1"
@@ -34,12 +48,12 @@ const ProfileSkillCard = ({ title, value }) => {
             opacity={1}
             pathLength={1}
             strokeDashoffset="0px"
-            strokeDasharray={`${value/10}px`}
+            strokeDasharray={`${stroke}px`}
 
           />
         </svg>
         <span className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 transform text-center text-xl text-body">
-          {value * 10}%
+          {percentage}%
         </span>
       </div>
       <h5>{title}</h5>
@@ -48,20 +62,33 @@ const ProfileSkillCard = ({ title, value }) => {
   )
 }
 const ProgressBar = ({ title, value }) => {
+  const [percentage, setPercentage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (percentage < value*10) {
+        setPercentage(percentage + 1);
+      } else {
+        clearInterval(timer);
+      }
+    }, 15);
+
+    return () => clearInterval(timer);
+  }, [percentage]);
   return (
     <div
       className="col-span-2 md:col-span-1"
     >
       <div className="progress">
         <h5>
-          {title} - <span className="text-primary">({value * 10}%)</span>
+          {title} - <span className="text-primary">({percentage}%)</span>
         </h5>
         <div className="progress-bar relative h-4 w-full rounded-full bg-primary bg-opacity-20">
           <span
             className="progress-progress absolute left-0 top-0 h-full rounded-full bg-primary"
             data-projection-id={50}
             style={{
-              width: `${value * 10}%`,
+              width: `${percentage}%`,
               transform: "none",
               transformOrigin: "0% 50% 0px",
             }}

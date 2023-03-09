@@ -2,9 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Creating portfolio use react18 and tailwindcss from scratch use webpack bundler",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
-    "serve": "webpack --config webpack.config.js --mode development",
+    "serve": "webpack --config webpack.config.js",
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"

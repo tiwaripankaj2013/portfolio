@@ -69,10 +69,24 @@ export const Blog = ({ title, blogs }) => {
         <div className='swiper-holder'>
           <Swiper
             spaceBetween={20}
-            slidesPerView={3}
+            slidesPerView={1} 
             modules={[Navigation]}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
+            }}
+            breakpoints={{
+              "467": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "768": {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              "1140": {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              }
             }}
           >
             {blogs.map((blog) => <SwiperSlide key={blog.id}><BlogItem  {...blog} /></SwiperSlide>)}
