@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Footer = () => {
+export const Footer = ({socialMedia,copyRight,name}) => {
   return (
     <footer className="footer relative z-20 border-t border-white border-opacity-10 bg-grey bg-opacity-95 backdrop-blur backdrop-filter">
     <div className="container mx-auto">
@@ -52,7 +52,7 @@ export const Footer = () => {
             </li>
             <li className="inline-block align-middle">
               <a
-                href="https://twitter.com"
+                href={socialMedia.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-block h-10 w-10 overflow-hidden border border-white border-opacity-10 text-center align-middle text-lg leading-none text-body rounded"
@@ -95,7 +95,7 @@ export const Footer = () => {
             </li>
             <li className="inline-block align-middle">
               <a
-                href="https://github.com"
+                href={socialMedia.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-block h-10 w-10 overflow-hidden border border-white border-opacity-10 text-center align-middle text-lg leading-none text-body rounded"
@@ -138,7 +138,7 @@ export const Footer = () => {
             </li>
             <li className="inline-block align-middle">
               <a
-                href="https://linkedin.com"
+                href={socialMedia.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-block h-10 w-10 overflow-hidden border border-white border-opacity-10 text-center align-middle text-lg leading-none text-body rounded"
@@ -187,7 +187,7 @@ export const Footer = () => {
             </li>
             <li className="inline-block align-middle">
               <a
-                href="https://dribbble.com"
+                href={socialMedia.web}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-block h-10 w-10 overflow-hidden border border-white border-opacity-10 text-center align-middle text-lg leading-none text-body rounded"
@@ -231,12 +231,12 @@ export const Footer = () => {
           </ul>
         </div>
         <p className="mb-0 w-full md:w-auto">
-          © 2023, All right reserved
+          {copyRight}
           <a
             className="pl-1.5 font-medium text-heading no-underline hover:text-primary"
             href="/"
           >
-            Pankaj Kumar Tiwari
+            {name}
           </a>
         </p>
       </div>

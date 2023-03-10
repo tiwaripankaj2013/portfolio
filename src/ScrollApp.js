@@ -13,10 +13,11 @@ import { Testimonial } from './component/testimonial';
 import WithNavMenu from './component/layout/WithNavMenu';
 import {
   AboutData, SkillsData, ServicesData,
-  ResumeData, PortfolioData, BlogData, TestimonialData,
+  ResumeData, PortfolioData, BlogData, QuotesData,
   ContactData,
   HomeData
 } from '../constant';
+import { Quotes } from './component/quotes';
 export const ScrollApp = () => {
 
   const aboutRef = useRef(null)
@@ -42,9 +43,12 @@ export const ScrollApp = () => {
     <section id="blog" data-nav-title="Blog" className='scrollItem' data-scrollspy>
     <Blog {...BlogData} />
     </section>
-    <section id="testimonial" data-nav-title="Review" className='scrollItem' data-scrollspy>
-    <Testimonial {...TestimonialData} />
+    <section id="qutes" data-nav-title="Qutes" className='scrollItem' data-scrollspy>
+    <Quotes {...QuotesData} />
     </section>
+   {/*  <section id="testimonial" data-nav-title="Review" className='scrollItem' data-scrollspy>
+    <Testimonial {...TestimonialData} />
+    </section> */}
     <section  id="contact" data-nav-title="Contact" className='scrollItem' data-scrollspy>
     <Contact {...ContactData} />
     </section>

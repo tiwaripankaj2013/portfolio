@@ -7,11 +7,12 @@ export const weil = require(`../portfolio/images/weil.png`).default;
 export const linkValidator = require(`../portfolio/images/linkValidator.png`).default;
 export const blog1 = require(`../portfolio/images/blog1.png`).default;
 export const logo = require(`../portfolio/images/logo.svg`).default;
+export const resumeLink = require(`../portfolio/images/Pankaj-Resume.pdf`).default;
 export const HomeData = {
         title:'',
         name:'Pankaj Kumar Tiwari',
         profile:profile,
-        introduction:'I am Pankaj Kumar Tiwari, I am Frontend developer',
+        introduction:'I am Pankaj Kumar Tiwari, 5+ years of experience in Frontend Developer,\nI can make your web application\n"Design-driven development for a seamless user experience"',
         role:'Frontend developer',
         linkedin:'https://www.linkedin.com/in/pankaj-kumar-tiwari-75546789/',
         github:'https://github.com/tiwaripankaj2013',
@@ -36,6 +37,7 @@ export const AboutData = {
         state:'Haryana',
         zipCode:'121003',
     },
+    resumeLink:resumeLink,
 }
 export const SkillsData = {
     title:'my skills',
@@ -330,6 +332,68 @@ export const TestimonialData = {
     ]
 
 }
+
+export const QuotesData = {
+    title : 'Quotes',
+    quotes:[
+        {
+            id:'1',
+            name:' Steve Jobs',
+            profile:'https://tf-react-bieber.vercel.app/images/user-avatar-4.png',
+            quote:'The only way to do great work is to love what you do.',
+        },
+        {
+            id:'2',
+            name:' Vidal Sassoon',
+            profile:'https://tf-react-bieber.vercel.app/images/user-avatar-4.png',
+            quote:'The only place where success comes before work is in the dictionary.',
+        },
+        {
+            id:'3',
+            name:'Christian D. Larson',
+            profile:'https://tf-react-bieber.vercel.app/images/user-avatar-4.png',
+            quote:'Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.',
+        },
+        {
+            id:'4',
+            name:'Winston Churchill',
+            profile:'https://tf-react-bieber.vercel.app/images/user-avatar-4.png',
+            quote:'Success is not final, failure is not fatal: it is the courage to continue that counts.',
+        },
+        {
+            id:'5',
+            name:'C.S. Lewis',
+            profile:'https://tf-react-bieber.vercel.app/images/user-avatar-4.png',
+            quote:'You are never too old to set another goal or to dream a new dream.',
+        },
+        {
+            id:'6',
+            name:'Swami Vivekananda',
+            profile:'https://tf-react-bieber.vercel.app/images/user-avatar-4.png',
+            quote:'The mind is everything. What you think, you become.',
+        },
+        {
+            id:'7',
+            name:'Rabindranath Tagore',
+            profile:'https://tf-react-bieber.vercel.app/images/user-avatar-4.png',
+            quote:'The power of imagination makes us infinite.',
+        },
+        {
+            id:'8',
+            name:'Kris Jamsa',
+            profile:'https://tf-react-bieber.vercel.app/images/user-avatar-4.png',
+            quote:'Coding is not just code, that&prime;s why it&prime;s called software engineering.',
+        },
+        {
+            id:'9',
+            name:'Alan Kay',
+            profile:'https://tf-react-bieber.vercel.app/images/user-avatar-4.png',
+            quote:'The best way to predict the future is to invent it.',
+        },
+       
+    ]
+
+}
 export const ContactData = {
     title:'Contact Us',
     subtitle:'Contact Information',
@@ -345,4 +409,16 @@ export const ContactData = {
         zipCode:'121003',
         
     }
+}
+export const FooterData = {
+    copyRight:'© 2023, All right reserved',
+    name:'Pankaj Kumar Tiwari',
+    socialMedia:{
+        linkedin:HomeData.linkedin,
+        github:HomeData.github,
+        facebook:'facebook',
+        twitter:HomeData.twitter,
+        web:'',
+    }
+
 }

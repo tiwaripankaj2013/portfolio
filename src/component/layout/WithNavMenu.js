@@ -1,9 +1,8 @@
 import React, { useLayoutEffect, useState } from 'react';
 import './Header.css';
-import {logo} from '../../../constant';
+import {logo,FooterData} from '../../../constant';
 import { ScrollSpy, onScrollUpdate } from '../../ScrollSpy';
 import { Footer } from '../footer';
-
 const Header = ({ options }) => {
   const onClick = (e) => {
     e.preventDefault();
@@ -30,9 +29,11 @@ const Header = ({ options }) => {
               alt="Pankaj Kumar Tiwari"
             />
             
-            
           </a>
           <div className="header-mobilenav block lg:hidden">
+          <a href="#contact" className="btn btn-hire">
+              <span>Hire Me</span>
+            </a>
             <button className="btn btn-small btn-transparent px-3 text-3xl" onClick={showMenu}>
               <svg
                 stroke="currentColor"
@@ -103,7 +104,7 @@ const WithNavMenu = ({ children, selector }) => {
         </div>
         <span className="block pb-24 lg:pb-28 xl:pb-32"></span>
       </main>
-      <Footer />
+      <Footer {...FooterData} />
       <button className="btn btn-goTo-top fixed bottom-12 top-auto right-7 z-30 rounded-full p-2.5 text-xl" onClick={scrollTop}>
           <svg
             stroke="currentColor"

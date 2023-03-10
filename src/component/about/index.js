@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 export const About = ({
   heading,profileImage,firstName, middleName,
-  lastName,address,age,languages,nationality}) => {
+  lastName,address,age,languages,nationality,resumeLink}) => {
   return (
     <section
     className="about-section pt-24 lg:pt-28 xl:pt-32"
@@ -99,7 +99,7 @@ export const About = ({
                 : Available
               </li>
             </ul>
-            <a href="/resume.pdf" className="btn mt-3">
+            <a href={resumeLink} className="btn mt-3">
               <span>Download Resume</span>
             </a>
           </div>

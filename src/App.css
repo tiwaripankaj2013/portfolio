@@ -198,3 +198,11 @@ line-height: 1.75rem !important;
 padding:0.625rem !important;
 position: fixed !important;
 }
+.quote-icon::before{
+  content: '"';
+@apply top-3 right-1 text-5xl relative text-gray-400 leading-4;
+}
+.quote-icon::after{
+  content: '"';
+  @apply top-4 left-1 text-5xl relative text-gray-400 leading-4;
+}

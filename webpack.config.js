@@ -7,7 +7,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.join(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: './',
     clean: true,
   },
   module: {
@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i, 
+        test: /\.(jpe?g|png|gif|svg|pdf)$/i, 
         loader: 'file-loader',
     },
       {
