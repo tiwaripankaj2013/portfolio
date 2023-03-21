@@ -126,6 +126,12 @@ export const ResumeData = {
         type :'working',
         timlines :[
             {
+                title : 'It Analyst',
+                duration:'Sep 2022 - Present',
+                subtitle:'Tata consultancy Services Ltd',
+                description:'Tata Consultancy Services is an IT services, consulting, and business solutions organization that has been partnering with many of the world’s largest businesses in their transformation journeys for over 50 years.'
+            },
+            {
                 title : 'UI Developer',
                 duration:'Feb 2020 - Sep 2022',
                 subtitle:'Wynk Ltd payrol of Bigoh Notation Pvt Ltd',
