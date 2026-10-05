@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "title": "Pankaj Kumar Tiwari | Frontend & AI Agent Developer",
+    "description": "Frontend Developer with 7.5 years of experience, expanding into Python and AI agent development with Ollama and Qwen. Available to join immediately."
+  },
+  "theme": {
+    "defaultMode": "dark",
+    "light": {
+      "bg": "#FFF9F4",
+      "surface": "#FFFFFF",
+      "card": "#FFFFFF",
+      "border": "#F1DCCB",
+      "fg": "#1A1410",
+      "muted": "#6B5B4E",
+      "primary": "#EA580C",
+      "primary-fg": "#FFFFFF",
+      "accent": "#FB923C"
+    },
+    "dark": {
+      "bg": "#0A0706",
+      "surface": "#100B09",
+      "card": "#150F0C",
+      "border": "#33221A",
+      "fg": "#F8F4F0",
+      "muted": "#A89A8F",
+      "primary": "#FF7A1A",
+      "primary-fg": "#140A04",
+      "accent": "#FFB066"
+    }
+  },
+  "brand": {
+    "name": "Pankaj Kumar Tiwari",
+    "tagline": "Frontend Developer | Python | AI Agent Development"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "#home"
+    },
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Skills",
+      "href": "#skills"
+    },
+    {
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Testimonials",
+      "href": "#testimonials"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Pankaj Kumar Tiwari",
+    "role": "Frontend Developer | Python & AI Agent Development",
+    "description": "Frontend Developer with 7.5 years of experience building scalable web applications. Expanding into Python and AI agent development with Ollama and Qwen. Available to join immediately.",
+    "image": "",
+    "script": "Build. Learn. Deliver.",
+    "badge": "React • TypeScript • Python • AI Agents • Ollama",
+    "ctaPrimary": {
+      "label": "View My Work",
+      "href": "#projects",
+      "icon": "arrow"
+    },
+    "ctaSecondary": {
+      "label": "Let's Connect",
+      "href": "#contact",
+      "icon": "send"
+    },
+    "resume": {
+      "label": "Career Summary",
+      "href": "#about",
+      "icon": "arrow"
+    },
+    "stats": [
+      {
+        "icon": "calendar",
+        "value": "7.5",
+        "label": "Years Experience"
+      },
+      {
+        "icon": "briefcase",
+        "value": "4",
+        "label": "Featured Projects"
+      },
+      {
+        "icon": "users",
+        "value": "7",
+        "label": "Roles & Engagements"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Tech Stack & Skills",
+    "subtitle": "Frontend engineering, Python and AI agent development",
+    "groups": [
+      {
+        "category": "Frontend Development",
+        "items": [
+          "React.js",
+          "TypeScript",
+          "JavaScript",
+          "Next.js",
+          "Redux Toolkit",
+          "CSS3",
+          "HTML5",
+          "Axios",
+          "Ag Grid",
+          "ES5/ES6"
+        ]
+      },
+      {
+        "category": "UI & Styling",
+        "items": [
+          "Tailwind CSS",
+          "Bootstrap",
+          "Sass",
+          "Material UI",
+          "Ant Design",
+          "Styled Components",
+          "React Bootstrap"
+        ]
+      },
+      {
+        "category": "Testing & Documentation",
+        "items": [
+          "Jest",
+          "React Testing Library",
+          "Storybook"
+        ]
+      },
+      {
+        "category": "CI/CD & Version Control",
+        "items": [
+          "Git",
+          "GitHub",
+          "GitLab",
+          "Jenkins",
+          "SonarQube"
+        ]
+      },
+      {
+        "category": "Python & AI Agent Development",
+        "items": [
+          "AI Agent Development",
+          "Python",
+          "Ollama",
+          "Qwen"
+        ]
+      },
+      {
+        "category": "AI Development Tools",
+        "items": [
+          "Cursor",
+          "GitHub Copilot",
+          "Claude"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "text": "I am a frontend developer with 7.5 years of experience building web applications, reusable UI systems and reliable component libraries. My core strengths include React, Redux, JavaScript, TypeScript, Next.js, testing, CI/CD and API integration. I am expanding into Python and AI agent development using Ollama and Qwen, with a focus on applying LLMs to practical business workflows, customer support and growth. Available to join immediately.",
+    "bars": [
+      {
+        "label": "Frontend Development",
+        "value": 95
+      },
+      {
+        "label": "Reusable UI Systems",
+        "value": 92
+      },
+      {
+        "label": "Testing & Code Quality",
+        "value": 86
+      },
+      {
+        "label": "Team Collaboration",
+        "value": 90
+      },
+      {
+        "label": "AI Agent Development & LLMs",
+        "value": 40
+      }
+    ],
+    "education": [
+      "MCA, IGNOU New Delhi",
+      "B.Sc., JP University Saran (Bihar) - 54.35%",
+      "12th, State Board - 64%",
+      "10th, State Board - 50.20%"
+    ],
+    "personal": "Indian · English and Hindi · Married · Based in Faridabad, Haryana",
+    "cta": {
+      "label": "Explore My Work",
+      "href": "#projects",
+      "icon": "arrow"
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "cta": {
+      "label": "Contact Me",
+      "href": "#contact",
+      "icon": "send"
+    },
+    "items": [
+      {
+        "company": "TCS Ltd",
+        "logo": "TCS",
+        "logoUrl": "https://www.google.com/s2/favicons?domain=www.tcs.com&sz=128",
+        "website": "https://www.tcs.com/",
+        "role": "Frontend Developer",
+        "period": "September 2022 - Present · Noida",
+        "points": [
+          "Building and maintaining web applications with React, Redux Toolkit, HTML5 and CSS3.",
+          "Working with Jest, component quality practices and modern frontend delivery workflows."
+        ]
+      },
+      {
+        "company": "Wynk Ltd · Payroll of BigohTech Pvt Ltd",
+        "logo": "BIG",
+        "logoUrl": "https://www.google.com/s2/favicons?domain=bigohtech.com&sz=128",
+        "website": "https://bigohtech.com/",
+        "role": "UI Developer",
+        "period": "February 2020 - September 2022 · Gurugram",
+        "points": [
+          "Worked on Wynk Music and related web experiences using React, Redux, JavaScript and Axios.",
+          "Built responsive interfaces and integrated client-server APIs for a high-traffic music platform."
+        ]
+      },
+      {
+        "company": "Thoughtworks · Collabera Technologies",
+        "logo": "COL",
+        "logoUrl": "https://www.google.com/s2/favicons?domain=www.collabera.com&sz=128",
+        "website": "https://www.collabera.com/",
+        "role": "Frontend Training",
+        "period": "April 2019 - January 2020",
+        "points": [
+          "Trained in HTML5, CSS, JavaScript, ES6 and Angular frontend development.",
+          "Strengthened modern development practices and user interface implementation skills."
+        ]
+      },
+      {
+        "company": "Altudo (formerly Edynamic Softech Solution Pvt Ltd.)",
+        "logo": "ALT",
+        "logoUrl": "https://www.google.com/s2/favicons?domain=www.altudo.co&sz=128",
+        "website": "https://www.altudo.co/",
+        "role": "Associate UI Developer",
+        "period": "May 2018 - March 2019 · Gurugram",
+        "points": [
+          "Developed user interfaces with HTML, CSS and JavaScript.",
+          "Created reusable layouts and collaborated on web application delivery."
+        ]
+      },
+      {
+        "company": "Aims Migital Technovation Pvt Ltd.",
+        "logo": "AM",
+        "role": "Associate UI Developer",
+        "period": "December 2017 - April 2018 · Gurugram",
+        "points": [
+          "Implemented responsive UI screens and reusable frontend patterns.",
+          "Worked with design and development teams to deliver polished interfaces."
+        ]
+      },
+      {
+        "company": "Neufango Labs Pvt Ltd.",
+        "logo": "NL",
+        "role": "UI Developer",
+        "period": "May 2017 - November 2017 · Noida",
+        "points": [
+          "Built web interfaces using core frontend technologies.",
+          "Supported cross-browser styling and responsive page implementation."
+        ]
+      },
+      {
+        "company": "Chrome Infotech Pvt Ltd.",
+        "logo": "CI",
+        "logoUrl": "https://www.google.com/s2/favicons?domain=www.chromeinfotech.net&sz=128",
+        "website": "https://www.chromeinfotech.net/",
+        "role": "UI Developer",
+        "period": "August 2016 - April 2017 · Noida",
+        "points": [
+          "Started professional frontend development with HTML, CSS and JavaScript.",
+          "Delivered interface components and page layouts for web projects."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Selected Projects & Live Websites",
+    "subtitle": "Explore the products and websites I have contributed to throughout my frontend career.",
+    "cta": {
+      "label": "View Project Links",
+      "href": "#contact",
+      "icon": "arrow"
+    },
+    "items": [
+      {
+        "title": "The Government e-Marketplace (GeM)",
+        "tags": [
+          "ReactJS",
+          "Redux Toolkit",
+          "Jest",
+          "HTML5",
+          "CSS3"
+        ],
+        "description": "India's one-stop digital marketplace for government procurement, designed to support transparent, efficient and inclusive purchasing.",
+        "href": "https://gem.gov.in/space-page",
+        "image": "https://gem.gov.in/resources/images/gem-new-logo-v6.svg"
+      },
+      {
+        "title": "FAMS (SAP)",
+        "tags": [
+          "ReactJS",
+          "Redux",
+          "Axios",
+          "Ag Grid",
+          "JavaScript"
+        ],
+        "description": "Failure Analysis Management System admin panel for managing device parts shipment records and role-based workflow access.",
+        "href": "#contact",
+        "image": "https://www.google.com/s2/favicons?domain=sap.com&sz=512"
+      },
+      {
+        "title": "Wynk Music",
+        "tags": [
+          "ReactJS",
+          "Redux",
+          "Axios",
+          "Ag Grid",
+          "JavaScript"
+        ],
+        "description": "Airtel's web platform for streaming and downloading songs, podcasts and playlists directly from the browser.",
+        "href": "https://wynk.in/music",
+        "image": "https://www.google.com/s2/favicons?domain=wynk.in&sz=128"
+      },
+      {
+        "title": "Emaar",
+        "tags": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "description": "A web experience for Emaar Properties, one of the world's leading real estate development companies.",
+        "href": "https://www.emaar.com/",
+        "image": "https://www.google.com/s2/favicons?domain=emaar.com&sz=128"
+      },
+      {
+        "title": "Airtel Xstream",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "description": "A streaming entertainment experience from Airtel, showcasing content discovery and media browsing.",
+        "href": "https://www.airtelxstream.in/",
+        "image": "https://www.google.com/s2/favicons?domain=airtelxstream.in&sz=128"
+      },
+      {
+        "title": "Weil",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "description": "A professional website experience for Weil, included in the project portfolio.",
+        "href": "https://www.weil.com/",
+        "image": "https://www.google.com/s2/favicons?domain=weil.com&sz=128"
+      },
+      {
+        "title": "Weil Careers",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "description": "A careers experience for Weil, connecting candidates with opportunities and professional information.",
+        "href": "https://careers.weil.com/",
+        "image": "https://www.google.com/s2/favicons?domain=careers.weil.com&sz=128"
+      },
+      {
+        "title": "Wynk Preview",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "description": "A pre-production Wynk web experience included among the project links.",
+        "href": "https://zion-preprod.wynk.in/",
+        "image": "https://www.google.com/s2/favicons?domain=zion-preprod.wynk.in&sz=128"
+      },
+      {
+        "title": "Viralbao",
+        "tags": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "description": "A digital web experience included in the professional project portfolio.",
+        "href": "https://www.viralbao.com",
+        "image": "https://www.google.com/s2/favicons?domain=viralbao.com&sz=128"
+      },
+      {
+        "title": "Migital",
+        "tags": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "description": "A digital product experience from Migital.",
+        "href": "https://migital.com/",
+        "image": "https://www.google.com/s2/favicons?domain=migital.com&sz=128"
+      },
+      {
+        "title": "Mevofit",
+        "tags": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "description": "A web experience included in the professional project portfolio.",
+        "href": "https://www.mevofit.com",
+        "image": "https://www.google.com/s2/favicons?domain=mevofit.com&sz=128"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Professional Strengths",
+    "items": [
+      {
+        "name": "Reusable UI Systems",
+        "role": "Frontend capability",
+        "rating": 5,
+        "quote": "Designing reusable, multipurpose templates and Storybook components to improve consistency, documentation and scalability across projects."
+      },
+      {
+        "name": "Quality Engineering",
+        "role": "Testing and delivery",
+        "rating": 5,
+        "quote": "Writing unit tests with Jest and React Testing Library, and contributing to CI/CD automation with Jenkins and SonarQube."
+      },
+      {
+        "name": "Modern Collaboration",
+        "role": "Tools and integration",
+        "rating": 5,
+        "quote": "Working with Git, GitHub, GitLab, REST and SOAP APIs, Axios, and AI-powered developer tools such as Cursor and GitHub Copilot."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "text": "I am available to join immediately and open to frontend development opportunities, Python and AI agent roles, product collaborations and conversations about building useful, reliable web experiences.",
+    "info": [
+      {
+        "icon": "mail",
+        "value": "tiwaripankaj2013@gmail.com"
+      },
+      {
+        "icon": "phone",
+        "value": "+91 8700870328"
+      },
+      {
+        "icon": "pin",
+        "value": "428/1 Shiv Durga Vihar, Lakarpur, Faridabad, Haryana 121009"
+      }
+    ],
+    "subjects": [
+      "Job Opportunity",
+      "Frontend Collaboration",
+      "Project Discussion",
+      "Other"
+    ]
+  },
+  "footer": {
+    "text": "Let's build thoughtful web experiences together.",
+    "copyright": "© 2026 Pankaj Kumar Tiwari. All rights reserved.",
+    "socials": [
+      {
+        "icon": "linkedin",
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/pankaj-kumar-tiwari-75546789/"
+      },
+      {
+        "icon": "github",
+        "label": "GitHub",
+        "href": "https://github.com/tiwaripankaj2013"
+      },
+      {
+        "icon": "twitter",
+        "label": "X / Twitter",
+        "href": "https://x.com/tiwarpankaj2013"
+      },
+      {
+        "icon": "mail",
+        "label": "Email",
+        "href": "mailto:tiwaripankaj2013@gmail.com"
+      }
+    ]
+  }
+}

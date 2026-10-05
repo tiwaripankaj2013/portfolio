@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Your Personal AI Agent — from prompt to action</title>
+  <desc id="desc">A poster showing a Python self-assistant using a local Ollama Qwen model, approved notes and tasks, limited tools, and human approval before changes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1020"/><stop offset="1" stop-color="#17122F"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#32D6B5"/><stop offset="1" stop-color="#7C6CFF"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#02040C" flood-opacity=".34"/></filter>
+    <style>
+      .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+      .muted{fill:#B4BCD1}.white{fill:#F7F8FC}.mint{fill:#54E1C2}.lav{fill:#B8AEFF}
+    </style>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <circle cx="1000" cy="80" r="250" fill="#7867FF" opacity=".08"/>
+  <circle cx="54" cy="1100" r="280" fill="#22C9AA" opacity=".06"/>
+  <g class="sans">
+    <text x="76" y="94" class="mint" font-size="19" font-weight="750" letter-spacing="3">AI AGENTS · MADE PRACTICAL</text>
+    <text x="76" y="178" class="white" font-size="58" font-weight="800" letter-spacing="-2">Your Personal</text>
+    <text x="76" y="244" class="white" font-size="58" font-weight="800" letter-spacing="-2">AI Assistant</text>
+    <text x="78" y="291" class="muted" font-size="23">From a plain-language request to a reviewed plan.</text>
+    <g transform="translate(76 324)">
+      <rect width="928" height="82" rx="20" fill="#FFFFFF" opacity=".07" stroke="#FFFFFF" stroke-opacity=".13"/>
+      <circle cx="43" cy="41" r="17" fill="#54E1C2" opacity=".18"/>
+      <path d="M36 41h14m-7-7v14" stroke="#54E1C2" stroke-width="3" stroke-linecap="round"/>
+      <text x="78" y="35" class="muted" font-size="15" font-weight="650" letter-spacing="1.2">EXAMPLE REQUEST</text>
+      <text x="78" y="62" class="white" font-size="21" font-weight="600">“Summarize my priorities for today and suggest a plan.”</text>
+    </g>
+    <text x="76" y="466" class="white" font-size="25" font-weight="750">How the agent works</text>
+    <text x="1004" y="466" text-anchor="end" class="muted" font-size="15">A common agent pattern</text>
+    <!-- connectors -->
+    <path d="M287 580h40m-9-9 9 9-9 9M520 580h40m-9-9 9 9-9 9M753 580h40m-9-9 9 9-9 9" fill="none" stroke="#7E88A7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- stage 1 -->
+    <g filter="url(#shadow)"><rect x="76" y="500" width="211" height="200" rx="24" fill="#171F35" stroke="#38435E"/></g>
+    <circle cx="112" cy="542" r="19" fill="#54E1C2" opacity=".16"/><text x="112" y="549" text-anchor="middle" class="mint" font-size="17" font-weight="800">1</text>
+    <text x="101" y="592" class="white" font-size="22" font-weight="750">Understand</text>
+    <text x="101" y="624" class="muted" font-size="16">Python receives the</text><text x="101" y="648" class="muted" font-size="16">request and context.</text>
+    <!-- stage 2 -->
+    <g filter="url(#shadow)"><rect x="309" y="500" width="211" height="200" rx="24" fill="#171F35" stroke="#38435E"/></g>
+    <circle cx="345" cy="542" r="19" fill="#7C6CFF" opacity=".22"/><text x="345" y="549" text-anchor="middle" class="lav" font-size="17" font-weight="800">2</text>
+    <text x="334" y="592" class="white" font-size="22" font-weight="750">Reason</text>
+    <text x="334" y="624" class="muted" font-size="16">Qwen via Ollama</text><text x="334" y="648" class="muted" font-size="16">plans the next step.</text>
+    <!-- stage 3 -->
+    <g filter="url(#shadow)"><rect x="542" y="500" width="211" height="200" rx="24" fill="#171F35" stroke="#38435E"/></g>
+    <circle cx="578" cy="542" r="19" fill="#54E1C2" opacity=".16"/><text x="578" y="549" text-anchor="middle" class="mint" font-size="17" font-weight="800">3</text>
+    <text x="567" y="592" class="white" font-size="22" font-weight="750">Use tools</text>
+    <text x="567" y="624" class="muted" font-size="16">Read approved notes</text><text x="567" y="648" class="muted" font-size="16">and task list only.</text>
+    <!-- stage 4 -->
+    <g filter="url(#shadow)"><rect x="775" y="500" width="229" height="200" rx="24" fill="#20203B" stroke="#766CFF" stroke-width="1.5"/></g>
+    <circle cx="811" cy="542" r="19" fill="#7C6CFF" opacity=".25"/><text x="811" y="549" text-anchor="middle" class="lav" font-size="17" font-weight="800">4</text>
+    <text x="800" y="592" class="white" font-size="22" font-weight="750">Ask &amp; act</text>
+    <text x="800" y="624" class="muted" font-size="16">Show a plan; get your</text><text x="800" y="648" class="muted" font-size="16">approval before edits.</text>
+    <!-- architecture -->
+    <g filter="url(#shadow)"><rect x="76" y="745" width="928" height="213" rx="26" fill="#11192D" stroke="#303B59"/></g>
+    <text x="108" y="790" class="white" font-size="23" font-weight="750">Inside the build</text>
+    <text x="108" y="824" class="muted" font-size="15">A small, inspectable stack</text>
+    <line x1="350" y1="777" x2="350" y2="926" stroke="#303B59"/>
+    <line x1="567" y1="777" x2="567" y2="926" stroke="#303B59"/>
+    <line x1="785" y1="777" x2="785" y2="926" stroke="#303B59"/>
+    <text x="383" y="802" class="mint" font-size="14" font-weight="750" letter-spacing="1">APP</text>
+    <text x="383" y="839" class="white" font-size="19" font-weight="700">Python</text>
+    <text x="383" y="867" class="muted" font-size="15">Intent · tool routing</text>
+    <text x="383" y="889" class="muted" font-size="15">· approval flow</text>
+    <text x="600" y="802" class="lav" font-size="14" font-weight="750" letter-spacing="1">MODEL RUNTIME</text>
+    <text x="600" y="839" class="white" font-size="19" font-weight="700">Ollama + Qwen</text>
+    <text x="600" y="867" class="muted" font-size="15">Local inference</text>
+    <text x="600" y="889" class="muted" font-size="15">on your machine</text>
+    <text x="817" y="802" class="mint" font-size="14" font-weight="750" letter-spacing="1">TOOLS</text>
+    <text x="817" y="839" class="white" font-size="19" font-weight="700">Notes · tasks</text>
+    <text x="817" y="867" class="muted" font-size="15">Allowlisted actions</text>
+    <text x="817" y="889" class="muted" font-size="15">with clear limits</text>
+    <!-- safety strip -->
+    <rect x="76" y="994" width="928" height="115" rx="24" fill="#102A2B" stroke="#2A7066"/>
+    <circle cx="122" cy="1051" r="23" fill="#54E1C2" opacity=".17"/>
+    <path d="M122 1037l13 5v9c0 9-6 15-13 19-7-4-13-10-13-19v-9z" fill="none" stroke="#54E1C2" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M116 1051l4 4 8-9" fill="none" stroke="#54E1C2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="164" y="1043" class="mint" font-size="18" font-weight="800">HUMAN APPROVAL IS THE CHECKPOINT</text>
+    <text x="164" y="1074" class="white" font-size="17">The agent can suggest and prepare. You decide before anything changes.</text>
+    <!-- bottom -->
+    <text x="76" y="1175" class="white" font-size="23" font-weight="750">A good demo makes the whole loop visible</text>
+    <g class="sans" font-size="15" font-weight="650">
+      <rect x="76" y="1200" width="200" height="47" rx="14" fill="#FFFFFF" opacity=".08"/><text x="176" y="1229" text-anchor="middle" class="white">1 · Ask</text>
+      <rect x="293" y="1200" width="200" height="47" rx="14" fill="#FFFFFF" opacity=".08"/><text x="393" y="1229" text-anchor="middle" class="white">2 · Inspect sources</text>
+      <rect x="510" y="1200" width="200" height="47" rx="14" fill="#FFFFFF" opacity=".08"/><text x="610" y="1229" text-anchor="middle" class="white">3 · Review plan</text>
+      <rect x="727" y="1200" width="277" height="47" rx="14" fill="url(#glow)"/><text x="865" y="1229" text-anchor="middle" fill="#0B1020">4 · Approve or cancel</text>
+    </g>
+    <text x="76" y="1300" class="muted" font-size="15">PERSONAL AI AGENT · PYTHON × OLLAMA × QWEN</text>
+    <text x="1004" y="1300" text-anchor="end" class="muted" font-size="14">Concept workflow · not a deployed product</text>
+  </g>
+</svg>
